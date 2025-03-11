@@ -1,0 +1,64 @@
+/* kode-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kode Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/kode-mono-v2-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* kode-mono-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kode Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/kode-mono-v2-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* kode-mono-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kode Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/kode-mono-v2-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* kode-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Kode Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/kode-mono-v2-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  font-family: "Kode Mono";
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  background-color: bisque;
+  font-size: 20px;
+
+  &:hover {
+    background-color: aliceblue;
+  }
+}
+
+button {
+  height: 30px;
+  font-size: 20px;
+  background-color: aliceblue;
+
+  &:hover {
+    background-color: bisque;
+  }
+}
