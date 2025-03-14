@@ -31,34 +31,20 @@
   src: url("./fonts/kode-mono-v2-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+@import "tailwindcss";
+@plugin "daisyui";
+
 body {
   font-family: "Kode Mono";
 }
 
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-input {
-  width: 300px;
-  height: 30px;
-  background-color: bisque;
-  font-size: 20px;
-
-  &:hover {
-    background-color: aliceblue;
-  }
-}
-
-button {
-  height: 30px;
-  font-size: 20px;
-  background-color: aliceblue;
-
-  &:hover {
-    background-color: bisque;
-  }
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  border: 10px solid black;
 }
