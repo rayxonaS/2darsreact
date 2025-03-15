@@ -1,18 +1,21 @@
-import { useState } from "react";
 import Modal from "./modal";
 import { FaTrash } from "react-icons/fa";
+import { MdOutlineEdit } from "react-icons/md";
 
 function Item({ t, deleteTitle }) {
-  const [showModal, setShowModal] = useState(false);
   return (
     <>
-      {showModal && (
-        <Modal deleteTitle={deleteTitle} setShowModal={setShowModal} t={t} />
-      )}
+      <Modal deleteTitle={deleteTitle} t={t} />
       <li>
         <p>{t.title}</p>
-        <button className="btn btn-primary" onClick={() => setShowModal(true)}>
+        <button
+          onClick={() => document.getElementById("my_modal_1").showModal()}
+          className="btn btn-error"
+        >
           <FaTrash />
+        </button>
+        <button className="btn btn-success">
+          <MdOutlineEdit />
         </button>
       </li>
     </>

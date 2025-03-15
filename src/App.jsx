@@ -1,4 +1,4 @@
-/*import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import TitleList from "./components/TitleList";
 import Form from "./components/Form";
 
@@ -71,16 +71,4 @@ function App() {
   );
 }
 
-export default App;*/
-
-function App() {
-  fetch("https://jsonplaceholder.typicode.com/posts")
-    .then((data) => data.json())
-    .then((posts) => console.log(posts))
-    .catch((error) => console.log(error));
-  return (
-    <div>
-      <ul>{}</ul>
-    </div>
-  );
-}
+export default App;
