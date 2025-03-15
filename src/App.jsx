@@ -53,15 +53,17 @@ function App() {
   return (
     <div className="h-screen grid place-items-center">
       <div>
-        <h1 className="mb-5">Todos:</h1>
+        <h1 className="mb-70 text-center font-bold text-black text-3xl">
+          LIST OF BMW CARS
+        </h1>
         <Form
           setText={setText}
           text={text}
           handleSubmit={handleSubmit}
           error={error}
         />
-        <ul>
-          {!titles.length && <h2>You don't have any information</h2>}
+        <ul className="mt-5 font-bold">
+          {!titles.length && <h2>You need to choose at least one car</h2>}
           {titles.length > 0 && (
             <TitleList titles={titles} deleteTitle={deleteTitle} />
           )}

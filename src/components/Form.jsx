@@ -6,8 +6,8 @@ function Form({ setText, handleSubmit, text, error }) {
     >
       <input
         type="text"
-        placeholder="Type here"
-        className="input w-xl rounded-lg"
+        placeholder="Choose your favorite car"
+        className="input w-xl rounded-lg text-xl"
         onChange={(e) => {
           const inputText = e.target.value;
           setText(inputText);
@@ -15,7 +15,9 @@ function Form({ setText, handleSubmit, text, error }) {
         value={text}
       />
 
-      <button className="btn btn-secondary">Add</button>
+      <button className="btn text-xl border-b-black  w-full mt-4 bg-orange-200 hover:bg-orange-300 font-semibold py-2 px-4 rounded-xl transition-all text-black">
+        Add
+      </button>
       {error && <p>{error}</p>}
     </form>
   );
