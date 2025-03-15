@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from "./modal";
+import { FaTrash } from "react-icons/fa";
 
 function Item({ t, deleteTitle }) {
   const [showModal, setShowModal] = useState(false);
@@ -10,7 +11,9 @@ function Item({ t, deleteTitle }) {
       )}
       <li>
         <p>{t.title}</p>
-        <button onClick={() => setShowModal(true)}>Delete</button>
+        <button className="btn btn-primary" onClick={() => setShowModal(true)}>
+          <FaTrash />
+        </button>
       </li>
     </>
   );

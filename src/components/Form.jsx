@@ -1,10 +1,10 @@
 function Form({ setText, handleSubmit, text, error }) {
   return (
-    <form className="form" onSubmit={handleSubmit}>
+    <form className="max-w-96 flex flex-col gap-3 " onSubmit={handleSubmit}>
       <input
-        className="input"
         type="text"
-        placeholder="Write whatever you want"
+        placeholder="Type here"
+        className="input"
         onChange={(e) => {
           const inputText = e.target.value;
           setText(inputText);
@@ -12,7 +12,7 @@ function Form({ setText, handleSubmit, text, error }) {
         value={text}
       />
 
-      <button className="button">Add</button>
+      <button className="btn btn-secondary">Add</button>
       {error && <p>{error}</p>}
     </form>
   );

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/*import { useEffect, useState } from "react";
 import TitleList from "./components/TitleList";
 import Form from "./components/Form";
 
@@ -51,21 +51,36 @@ function App() {
   };
 
   return (
-    <div>
-      <Form
-        setText={setText}
-        text={text}
-        handleSubmit={handleSubmit}
-        error={error}
-      />
-      <ul>
-        {!titles.length && <h2>You don't have any information</h2>}
-        {titles.length > 0 && (
-          <TitleList titles={titles} deleteTitle={deleteTitle} />
-        )}
-      </ul>
+    <div className="h-screen grid place-items-center">
+      <div>
+        <h1 className="mb-5">Todos:</h1>
+        <Form
+          setText={setText}
+          text={text}
+          handleSubmit={handleSubmit}
+          error={error}
+        />
+        <ul>
+          {!titles.length && <h2>You don't have any information</h2>}
+          {titles.length > 0 && (
+            <TitleList titles={titles} deleteTitle={deleteTitle} />
+          )}
+        </ul>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default App;*/
+
+function App() {
+  fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((data) => data.json())
+    .then((posts) => console.log(posts))
+    .catch((error) => console.log(error));
+  return (
+    <div>
+      <ul>{}</ul>
+    </div>
+  );
+}
