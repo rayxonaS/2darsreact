@@ -3,8 +3,11 @@ const Modal = ({ t, deleteTitle }) => {
     <dialog id="my_modal_1" className="modal">
       <div className="modal-box">
         <h3 className="font-bold text-lg">Delete</h3>
-        <p className="py-4 underline decoration-indigo-500/30">
-          Are you sure you want to delete {t.title}?
+        <p className="py-4">
+          Are you sure you want to delete {t.title}?{" "}
+          <span className="text-xl text-blue-400">
+            But we do not recommend deleting:)
+          </span>
         </p>
         <div className="modal-action">
           <form method="dialog">
