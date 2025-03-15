@@ -1,10 +1,13 @@
 function Form({ setText, handleSubmit, text, error }) {
   return (
-    <form className="max-w-96 flex flex-col gap-3 " onSubmit={handleSubmit}>
+    <form
+      className=" flex flex-col gap-3 w-xl rounded-lg "
+      onSubmit={handleSubmit}
+    >
       <input
         type="text"
         placeholder="Type here"
-        className="input"
+        className="input w-xl rounded-lg"
         onChange={(e) => {
           const inputText = e.target.value;
           setText(inputText);
