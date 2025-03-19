@@ -38,10 +38,10 @@ function Home() {
                     className="card-body gap-4"
                     to={`/product/${product.id}`}
                   >
-                    <h2 className="card-title font-mono text-xl font-bold">
+                    <h2 className="card-title font-mono text-3xl font-bold text-center justify-center line-clamp-1">
                       {product.title}
                     </h2>
-                    <p className="font-mono">{product.description}</p>
+
                     <div className="card-actions justify-end">
                       <button className="btn btn-ghost font-mono text-xl">
                         Buy Now

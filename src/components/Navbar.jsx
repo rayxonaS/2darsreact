@@ -52,15 +52,19 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a className="text-2xl font-mono">Home</a>
+            <Link to="./" className="text-2xl font-mono focus:outline-2">
+              Home
+            </Link>
           </li>
           <li>
-            <details>
-              <summary className="text-2xl font-mono">About</summary>
-            </details>
+            <Link to="./About" className="text-2xl font-mono focus:outline-2">
+              About
+            </Link>
           </li>
           <li>
-            <a className="text-2xl font-mono">Contact</a>
+            <Link to="./Contact" className="text-2xl font-mono focus:outline-2">
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
