@@ -11,7 +11,26 @@ function Product() {
   return (
     <section>
       {isPending && <h2>Loading...</h2>}
-      <div>{product && <h1>{product.title}</h1>}</div>
+      <div>
+        {product && (
+          <div className="card lg:card-side bg-base-100 shadow-sm">
+            <figure className="bg-amber-100 p-4 rounded-lg">
+              <img
+                className="rounded-lg w-full h-auto object-cover"
+                src={product.thumbnail}
+                alt="Album"
+              />
+            </figure>
+            <div className="card-body max-w-3xl">
+              <h2 className="card-title text-xl">{product.title}</h2>
+              <p className="text-xl">{product.description}</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">Purchase Now</button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </section>
   );
 }
