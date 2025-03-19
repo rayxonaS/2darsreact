@@ -2,9 +2,9 @@ function Footer() {
   return (
     <footer className="footer footer-horizontal footer-center bg-blue-100 text-base-content rounded p-10 mt-5">
       <nav className="grid grid-flow-col gap-4">
-        <a className="link link-hover text-xl">About us</a>
-        <a className="link link-hover text-xl">Contact</a>
-        <a className="link link-hover text-xl">Product</a>
+        <a className="link link-hover text-xl font-mono">About us</a>
+        <a className="link link-hover text-xl font-mono">Contact</a>
+        <a className="link link-hover text-xl font-mono">Product</a>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4">
@@ -44,7 +44,7 @@ function Footer() {
         </div>
       </nav>
       <aside>
-        <p className="text-xl">
+        <p className="text-xl font-mono">
           Copyright © {new Date().getFullYear()} - All right reserved by ACME
           Industries Ltd
         </p>

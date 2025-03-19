@@ -38,10 +38,14 @@ function Home() {
                     className="card-body gap-4"
                     to={`/product/${product.id}`}
                   >
-                    <h2 className="card-title">{product.title}</h2>
-                    <p>{product.description}</p>
+                    <h2 className="card-title font-mono text-xl">
+                      {product.title}
+                    </h2>
+                    <p className="font-mono">{product.description}</p>
                     <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn btn-ghost font-mono text-xl">
+                        Buy Now
+                      </button>
                     </div>
                   </Link>
                 </li>
@@ -50,7 +54,7 @@ function Home() {
           </ul>
           <div className="card-actions justify-end">
             <button
-              className="btn btn-dash btn-info mt-5 text-xl"
+              className="btn btn-dash btn-info mt-5 text-xl font-mono"
               onClick={changeLimit}
             >
               <svg

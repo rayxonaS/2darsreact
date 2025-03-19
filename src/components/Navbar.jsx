@@ -45,20 +45,22 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-dash btn-accent text-xl">The Vitamin Shoppe</a>
+        <a className="btn btn-dash btn-accent text-xl font-mono">
+          The Vitamin Shoppe
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a className="text-2xl">Home</a>
+            <a className="text-2xl font-mono">Home</a>
           </li>
           <li>
             <details>
-              <summary className="text-2xl">About</summary>
+              <summary className="text-2xl font-mono">About</summary>
             </details>
           </li>
           <li>
-            <a className="text-2xl">Contact</a>
+            <a className="text-2xl font-mono">Contact</a>
           </li>
         </ul>
       </div>

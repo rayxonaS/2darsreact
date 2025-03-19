@@ -22,10 +22,12 @@ function Product() {
               />
             </figure>
             <div className="card-body max-w-3xl">
-              <h2 className="card-title text-xl">{product.title}</h2>
-              <p className="text-xl">{product.description}</p>
+              <h2 className="card-title text-xl font-mono">{product.title}</h2>
+              <p className="text-xl font-mono">{product.description}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Purchase Now</button>
+                <button className="btn btn-primary font-mono">
+                  Purchase Now
+                </button>
               </div>
             </div>
           </div>
