@@ -28,7 +28,7 @@ function Home() {
             {data.products.map((product) => {
               return (
                 <li
-                  className="card bg-amber-200 image-full w-96 shadow-sm mb-6"
+                  className="card bg-amber-200 image-full w-full shadow-sm mb-6 group"
                   key={product.id}
                 >
                   <figure>
