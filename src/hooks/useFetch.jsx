@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Modal from "../components/modal";
 
 export const useFetch = (url) => {
   const [data, setData] = useState(null);
@@ -16,7 +15,7 @@ export const useFetch = (url) => {
         }
 
         const data = await req.json();
-        setData(data.products);
+        setData(data);
       } catch (error) {
         console.log(error.message);
         setError(error.message);
