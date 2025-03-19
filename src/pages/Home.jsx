@@ -24,11 +24,11 @@ function Home() {
     <section>
       {data && (
         <>
-          <ul className="grid grid-cols-4 grid-rows-4  p-4 gap-4 justify-between">
+          <ul className="grid grid-cols-4 grid-rows-4 gap-6 p-4">
             {data.products.map((product) => {
               return (
                 <li
-                  className="card bg-amber-200 image-full w-96 shadow-sm"
+                  className="card bg-amber-200 image-full w-96 shadow-sm mb-6"
                   key={product.id}
                 >
                   <figure>
@@ -38,7 +38,7 @@ function Home() {
                     className="card-body gap-4"
                     to={`/product/${product.id}`}
                   >
-                    <h2 className="card-title font-mono text-xl">
+                    <h2 className="card-title font-mono text-xl font-bold">
                       {product.title}
                     </h2>
                     <p className="font-mono">{product.description}</p>
